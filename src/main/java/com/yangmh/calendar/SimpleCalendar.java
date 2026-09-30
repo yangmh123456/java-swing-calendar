@@ -64,10 +64,10 @@ public final class SimpleCalendar {
         StringBuilder text = new StringBuilder();
         text.append("============================\n");
         text.append("       ").append(year).append("年 ").append(month).append("月\n");
-        text.append("日  一  二  三  四  五  六\n");
-        for (int offset = 0; offset < firstDay; offset++) text.append("   ");
+        text.append("Sun Mon Tue Wed Thu Fri Sat\n");
+        for (int offset = 0; offset < firstDay; offset++) text.append("    ");
         for (int day = 1; day <= days; day++) {
-            text.append(String.format("%2d ", day));
+            text.append(String.format("%3d ", day));
             if ((day + firstDay) % 7 == 0) text.append('\n');
         }
         if ((days + firstDay) % 7 != 0) text.append('\n');

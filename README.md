@@ -4,9 +4,9 @@
 
 基于课程期间的 Java 代码整理，使用 Swing 构建桌面界面，支持全年日历、指定月份日历和当前月日历。日历计算与界面分离，包含中文 Javadoc。
 
-![课程原版运行截图](docs/calendar-screenshot.png)
+![整理版日历界面](docs/calendar-screenshot.png)
 
-上图保留课程原版运行效果；本仓库整理版调整了窗口布局，增加输入范围校验与自动化测试。
+上图由当前程序的 Swing 组件直接渲染。本仓库整理版调整了窗口布局，增加输入范围校验与自动化测试。
 
 ## 功能与实现
 
@@ -49,7 +49,7 @@ java -cp target/classes com.yangmh.calendar.CalendarGUI
 src/main/java/com/yangmh/calendar/SimpleCalendar.java  日历计算和文本渲染
 src/main/java/com/yangmh/calendar/CalendarGUI.java      Swing 界面和启动入口
 src/test/java/com/yangmh/calendar/SimpleCalendarTest.java
-docs/calendar-screenshot.png                         课程原版运行截图
+docs/calendar-screenshot.png                         当前程序界面渲染图
 pom.xml                                              测试和可执行 JAR 构建
 ```
 
